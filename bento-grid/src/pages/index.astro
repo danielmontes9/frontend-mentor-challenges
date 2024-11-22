@@ -1,11 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<svg
+  <main class="overflow-hidden">
+    <!-- <svg
 			class="astro-a"
 			width="495"
 			height="623"
@@ -59,65 +59,295 @@ import Card from '../components/Card.astro';
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
-		</ul>
-	</main>
+		</ul> -->
+    <div class="card bg-purple text-center text-white p-2-5">
+      <p class="title mb-1">
+        Social Media <span class="text-yellow">10x</span>
+        <span class="text-italic">Faster</span>
+        <br />
+        with AI
+      </p>
+      <img
+        class="stars-width"
+        src="../../public/images/illustration-five-stars.webp"
+        alt="Stars"
+      />
+      <p class="content mt-0">Over 4,000 5-star reviewers</p>
+    </div>
+
+    <div class="card bg-white">
+      <img
+        class="w-100 mb-1"
+        src="../../public/images/illustration-multiple-platforms.webp"
+        alt="Social Networks"
+      />
+      <p class="subtitle mb-0">Manage multiple accounts and platforms.</p>
+    </div>
+
+    <div class="card bg-yellow pb-0 overflow-hidden">
+      <p class="subtitle">Maintain a consistent posting schedule.</p>
+      <img
+        class="w-65 image-position-bottom"
+        src="../../public/images/illustration-consistent-schedule.webp"
+        alt="Calendar"
+      />
+    </div>
+
+    <div class="card bg-light-purple text-center">
+      <p class="title-two m-1-5">Schedule to social media.</p>
+      <img
+        class="w-100"
+        src="../../public/images/illustration-schedule-posts.webp"
+        alt="Graph Best Time to Post"
+      />
+      <p class="caption m-1-5">
+        Optimize post timings to publish content at the perfect time for your
+        audience.
+      </p>
+    </div>
+
+    <div class="card bg-purple text-center text-white">
+      <img
+        class="w-65 m-1-5"
+        src="../../public/images/illustration-grow-followers.webp"
+        alt="Graph Follower Growth"
+      />
+      <p class="title-three">
+        Grow followers <br /> with non-stop <br /> content.
+      </p>
+    </div>
+
+    <div class="card p-2">
+      <p class="title fw-600">> 56%</p>
+      <p class="caption mb-1-5">faster audience growth</p>
+      <img
+        class="w-65"
+        src="../../public/images/illustration-audience-growth.webp"
+        alt="Avatars"
+      />
+    </div>
+
+    <div class="card bg-light-yellow p-2">
+      <p class="title-three fw-600 mb-1-5">
+        Create and schedule content <span class="text-purple text-italic"
+          >quicker.</span
+        >
+      </p>
+      <img
+        class="w-65"
+        src="../../public/images/illustration-create-post.webp"
+        alt="Button Create Post"
+      />
+    </div>
+
+    <div class="card bg-yellow p-2">
+      <p class="title-three fw-600 mb-1-5">Write your content using AI.</p>
+      <img
+        class="w-65"
+        src="../../public/images/illustration-ai-content.webp"
+        alt="Chat"
+      />
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+  main {
+    display: grid;
+    gap: 2rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  .img-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .bg-purple {
+    background-color: #7651dc;
+  }
+  .bg-light-purple {
+    background-color: #dcd1fc;
+  }
+  .bg-white {
+    background-color: #ffffff;
+  }
+  .bg-yellow {
+    background-color: #ffcc69;
+  }
+  .bg-light-yellow {
+    background-color: #faeee2;
+  }
+  .title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+  .title-two {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 0.9;
+  }
+  .title-three {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    line-height: 0.9;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    line-height: 0.9;
+  }
+  .content {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .caption {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .text-italic {
+    font-style: italic;
+  }
+  .text-white {
+    color: #fff;
+  }
+  .text-yellow {
+    color: #ffcc69;
+  }
+  .text-purple {
+    color: #7651dc;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  .stars-width {
+    width: 65%;
+  }
+  .w-100 {
+    width: 100%;
+  }
+  .w-65 {
+    width: 65%;
+  }
+
+  .temp-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .image-position-bottom {
+    position: relative;
+    bottom: -15px;
+  }
+  .fw-600 {
+    font-weight: bold;
+  }
+
+  .mt-0 {
+    margin-top: 0;
+  }
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .mb-1 {
+    margin-bottom: 1rem;
+  }
+  .mb-1-5 {
+    margin-bottom: 1.5rem;
+  }
+  .m-1-5 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .p-2 {
+    padding: 2rem;
+  }
+  .p-2-5 {
+    padding: 2.5rem;
+  }
+  .pt-0 {
+    padding-top: 0;
+  }
+  .pb-0 {
+    padding-bottom: 0;
+  }
+
+  /* main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  } */
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(
+      rgba(var(--accent-dark), 66%),
+      rgba(var(--accent-dark), 33%)
+    );
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .instructions code {
+    font-size: 0.8em;
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent-light));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
 </style>
