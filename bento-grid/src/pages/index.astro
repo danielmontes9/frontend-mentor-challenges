@@ -4,7 +4,7 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="overflow-hidden">
+  <main class="overflow-hidden container-grid">
     <!-- <svg
 			class="astro-a"
 			width="495"
@@ -60,43 +60,56 @@ import Card from "../components/Card.astro";
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul> -->
-    <div class="card bg-purple text-center text-white p-2-5">
+    <div
+      class="w card bg-purple text-center text-white p-2-5 align-items-center"
+    >
       <p class="title mb-1">
         Social Media <span class="text-yellow">10x</span>
+        <br class="d-none d-lg-block" />
         <span class="text-italic">Faster</span>
-        <br />
+        <br class="d-lg-none" />
         with AI
       </p>
       <img
-        class="stars-width"
+        class="stars-width w-lg-40"
         src="../../public/images/illustration-five-stars.webp"
         alt="Stars"
       />
       <p class="content mt-0">Over 4,000 5-star reviewers</p>
     </div>
 
-    <div class="card bg-white">
+    <div
+      class="t card bg-white overflow-hidden card-lg justify-content-lg-between"
+    >
       <img
-        class="w-100 mb-1"
+        class="w-100 w-lg-300px mb-1"
         src="../../public/images/illustration-multiple-platforms.webp"
         alt="Social Networks"
       />
-      <p class="subtitle mb-0">Manage multiple accounts and platforms.</p>
+      <p class="subtitle mb-0 letter-spacing-lg-2">
+        Manage <br class="d-none d-lg-block" /> multiple accounts and platforms.
+      </p>
     </div>
 
-    <div class="card bg-yellow pb-0 overflow-hidden">
-      <p class="subtitle">Maintain a consistent posting schedule.</p>
+    <div class="y card bg-yellow pb-0 overflow-hidden">
+      <p class="subtitle letter-spacing-lg-2">
+        Maintain a consistent <br class="d-none d-lg-block" /> posting schedule.
+      </p>
       <img
-        class="w-65 image-position-bottom"
+        class="w-65 image-position-bottom w-lg-100"
         src="../../public/images/illustration-consistent-schedule.webp"
         alt="Calendar"
       />
     </div>
 
-    <div class="card bg-light-purple text-center">
-      <p class="title-two m-1-5">Schedule to social media.</p>
+    <div
+      class="e card bg-light-purple overflow-hidden text-center text-lg-start"
+    >
+      <p class="title-two m-1-5 letter-spacing-lg-2">
+        Schedule to social media.
+      </p>
       <img
-        class="w-100"
+        class="w-100 w-lg-300px"
         src="../../public/images/illustration-schedule-posts.webp"
         alt="Graph Best Time to Post"
       />
@@ -106,9 +119,11 @@ import Card from "../components/Card.astro";
       </p>
     </div>
 
-    <div class="card bg-purple text-center text-white">
+    <div
+      class="i card bg-purple text-center text-white flex-lg-row align-items-lg-center text-lg-start gap-lg-1"
+    >
       <img
-        class="w-65 m-1-5"
+        class="w-65 m-1-5 w-lg-40 m-lg-0"
         src="../../public/images/illustration-grow-followers.webp"
         alt="Graph Follower Growth"
       />
@@ -117,33 +132,37 @@ import Card from "../components/Card.astro";
       </p>
     </div>
 
-    <div class="card p-2">
-      <p class="title fw-600">> 56%</p>
+    <div class="u card p-2 p-lg-1-5">
+      <p class="title fw-600 letter-spacing-lg-2">> 56%</p>
       <p class="caption mb-1-5">faster audience growth</p>
       <img
-        class="w-65"
+        class="w-65 w-lg-100"
         src="../../public/images/illustration-audience-growth.webp"
         alt="Avatars"
       />
     </div>
 
-    <div class="card bg-light-yellow p-2">
-      <p class="title-three fw-600 mb-1-5">
+    <div class="q card bg-light-yellow p-2 card-lg p-lg-1-5">
+      <p class="title-three fw-600 mb-1-5 fw-lg-500 letter-spacing-lg-2">
         Create and schedule content <span class="text-purple text-italic"
           >quicker.</span
         >
       </p>
       <img
-        class="w-65"
+        class="w-65 w-lg-100"
         src="../../public/images/illustration-create-post.webp"
         alt="Button Create Post"
       />
     </div>
 
-    <div class="card bg-yellow p-2">
-      <p class="title-three fw-600 mb-1-5">Write your content using AI.</p>
+    <div
+      class="r card bg-yellow p-2 p-lg-1-5 card-lg justify-content-lg-between"
+    >
+      <p class="title-three fw-600 mb-1-5 fw-lg-500 letter-spacing-lg-2">
+        Write your content using AI.
+      </p>
       <img
-        class="w-65"
+        class="w-65 w-lg-100"
         src="../../public/images/illustration-ai-content.webp"
         alt="Chat"
       />
@@ -166,6 +185,13 @@ import Card from "../components/Card.astro";
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .align-items-center {
+    align-items: center;
   }
   .img-shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -199,8 +225,8 @@ import Card from "../components/Card.astro";
   }
   .title-three {
     font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    /* font-weight: 500;
+    margin-bottom: 0.5rem; */
     line-height: 0.9;
   }
   .subtitle {
@@ -289,6 +315,138 @@ import Card from "../components/Card.astro";
   }
   .pb-0 {
     padding-bottom: 0;
+  }
+  .d-none {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    /* .container-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        grid-template-areas:
+          "q w w e"
+          "q w w e"
+          "q t y e"
+          "r t y e"
+          "r u i i"
+          "r u i i";
+      } */
+
+    .container-grid {
+      padding: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 2rem;
+      grid-template-areas:
+        "q w w e"
+        "q w w e"
+        "q t y e"
+        "r t y e"
+        "r u i i"
+        "r u i i";
+    }
+
+    .q {
+      grid-area: q;
+    }
+    .w {
+      grid-area: w;
+    }
+    .e {
+      grid-area: e;
+    }
+    .r {
+      grid-area: r;
+    }
+    .t {
+      grid-area: t;
+    }
+    .y {
+      grid-area: y;
+    }
+    .u {
+      grid-area: u;
+    }
+    .i {
+      grid-area: i;
+    }
+
+    .d-lg-flex {
+      display: flex;
+    }
+    .d-lg-block {
+      display: block;
+    }
+    .d-lg-none {
+      display: none;
+    }
+    .m-lg-0 {
+      margin: 0;
+    }
+
+    .card-lg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .flex-lg-row {
+      display: flex;
+      flex-direction: row;
+    }
+    .align-items-lg-center {
+      align-items: center;
+    }
+    .justify-content-lg-between {
+      justify-content: space-between;
+    }
+    .gap-lg-1 {
+      gap: 1rem;
+    }
+
+    .fw-lg-500 {
+      font-weight: 500;
+    }
+    .w-lg-100 {
+      width: 100%;
+    }
+
+    .p-lg-1-5 {
+      padding: 1.5rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+    }
+    .title-two {
+      font-size: 1.5rem;
+    }
+    .content {
+      font-size: 1rem;
+    }
+    .caption {
+      font-size: 0.9rem;
+    }
+
+    .text-lg-start {
+      text-align: left;
+    }
+
+    .w-lg-40 {
+      width: 40%;
+    }
+
+    .w-lg-300px {
+      width: 300px;
+    }
+
+    .letter-spacing-lg-2 {
+      letter-spacing: -2px;
+    }
   }
 
   /* main {
