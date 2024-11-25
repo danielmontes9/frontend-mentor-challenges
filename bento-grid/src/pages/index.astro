@@ -82,18 +82,22 @@ import Card from "../components/Card.astro";
       class="t card bg-white overflow-hidden card-lg justify-content-lg-between"
     >
       <img
-        class="w-100 w-lg-300px mb-1"
+        class="w-100 mb-1"
         src="../../public/images/illustration-multiple-platforms.webp"
         alt="Social Networks"
       />
       <p class="subtitle mb-0 letter-spacing-lg-2">
-        Manage <br class="d-none d-lg-block" /> multiple accounts and platforms.
+        Manage <br class="d-none d-lg-block" /> multiple <br
+          class="d-none d-lg-block"
+        /> accounts and <br class="d-none d-lg-block" /> platforms.
       </p>
     </div>
 
     <div class="y card bg-yellow pb-0 overflow-hidden">
       <p class="subtitle letter-spacing-lg-2">
-        Maintain a consistent <br class="d-none d-lg-block" /> posting schedule.
+        Maintain a <br class="d-none d-lg-block" /> consistent <br
+          class="d-none d-lg-block"
+        /> posting <br class="d-none d-lg-block" /> schedule.
       </p>
       <img
         class="w-65 image-position-bottom w-lg-100"
@@ -103,13 +107,13 @@ import Card from "../components/Card.astro";
     </div>
 
     <div
-      class="e card bg-light-purple overflow-hidden text-center text-lg-start"
+      class="e card bg-light-purple overflow-hidden text-center text-lg-start p-xl-2"
     >
       <p class="title-two m-1-5 letter-spacing-lg-2">
-        Schedule to social media.
+        Schedule to <br class="d-none d-lg-block" /> social media.
       </p>
       <img
-        class="w-100 w-lg-300px"
+        class="w-100 w-lg-300px w-xl-400px w-xxl-600px"
         src="../../public/images/illustration-schedule-posts.webp"
         alt="Graph Best Time to Post"
       />
@@ -132,7 +136,7 @@ import Card from "../components/Card.astro";
       </p>
     </div>
 
-    <div class="u card p-2 p-lg-1-5">
+    <div class="u card p-2 p-lg-1-5 p-xl-1">
       <p class="title fw-600 letter-spacing-lg-2">> 56%</p>
       <p class="caption mb-1-5">faster audience growth</p>
       <img
@@ -144,9 +148,10 @@ import Card from "../components/Card.astro";
 
     <div class="q card bg-light-yellow p-2 card-lg p-lg-1-5">
       <p class="title-three fw-600 mb-1-5 fw-lg-500 letter-spacing-lg-2">
-        Create and schedule content <span class="text-purple text-italic"
-          >quicker.</span
-        >
+        Create and <br class="d-none d-lg-block" /> schedule <br
+          class="d-none d-lg-block"
+        /> content <br class="d-none d-lg-block" />
+        <span class="text-purple text-italic">quicker.</span>
       </p>
       <img
         class="w-65 w-lg-100"
@@ -159,7 +164,9 @@ import Card from "../components/Card.astro";
       class="r card bg-yellow p-2 p-lg-1-5 card-lg justify-content-lg-between"
     >
       <p class="title-three fw-600 mb-1-5 fw-lg-500 letter-spacing-lg-2">
-        Write your content using AI.
+        Write your <br class="d-none d-lg-block" /> content <br
+          class="d-none d-lg-block"
+        /> using AI.
       </p>
       <img
         class="w-65 w-lg-100"
@@ -446,6 +453,43 @@ import Card from "../components/Card.astro";
 
     .letter-spacing-lg-2 {
       letter-spacing: -2px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .w-xl-400px {
+      width: 400px;
+    }
+
+    .title {
+      font-size: 4rem;
+    }
+    .subtitle {
+      font-size: 2.5rem;
+    }
+    .title-two {
+      font-size: 2.5rem;
+    }
+    .title-three {
+      font-size: 2.8rem;
+    }
+    .content {
+      font-size: 1rem;
+    }
+    .caption {
+      font-size: 1.3rem;
+    }
+    .p-xl-1 {
+      padding: 1.5rem;
+    }
+    .p-xl-2 {
+      padding: 2rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .w-xxl-600px {
+      width: 600px;
     }
   }
 
