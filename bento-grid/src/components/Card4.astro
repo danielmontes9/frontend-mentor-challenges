@@ -1,0 +1,21 @@
+---
+interface Props {
+  href: string;
+  alt: string;
+}
+
+const { href, alt } = Astro.props;
+---
+
+<div
+  class="e card bg-light-purple overflow-hidden text-center text-lg-start p-xl-2"
+>
+  <p class="title-two m-1-5 letter-spacing-lg-2">
+    Schedule to <br class="d-none d-lg-block" /> social media.
+  </p>
+  <img class="w-100 w-lg-300px w-xl-400px w-xxl-600px" src={href} alt={alt} />
+  <p class="caption m-1-5">
+    Optimize post timings to publish content at the perfect time for your
+    audience.
+  </p>
+</div>

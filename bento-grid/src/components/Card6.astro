@@ -1,0 +1,14 @@
+---
+interface Props {
+  href: string;
+  alt: string;
+}
+
+const { href, alt } = Astro.props;
+---
+
+<div class="u card p-2 p-lg-1-5 p-xl-1">
+  <p class="title fw-600 letter-spacing-lg-2">> 56%</p>
+  <p class="caption mb-1-5">faster audience growth</p>
+  <img class="w-65 w-lg-100" src={href} alt={alt} />
+</div>

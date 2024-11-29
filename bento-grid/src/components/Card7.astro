@@ -1,0 +1,18 @@
+---
+interface Props {
+  href: string;
+  alt: string;
+}
+
+const { href, alt } = Astro.props;
+---
+
+<div class="q card bg-light-yellow p-2 card-lg p-lg-1-5">
+  <p class="title-three fw-600 mb-1-5 fw-lg-500 letter-spacing-lg-2">
+    Create and <br class="d-none d-lg-block" /> schedule <br
+      class="d-none d-lg-block"
+    /> content <br class="d-none d-lg-block" />
+    <span class="text-purple text-italic">quicker.</span>
+  </p>
+  <img class="w-65 w-lg-100" src={href} alt={alt} />
+</div>

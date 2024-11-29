@@ -1,0 +1,20 @@
+---
+interface Props {
+  href: string;
+  alt: string;
+}
+
+const { href, alt } = Astro.props;
+---
+
+<div class="w card bg-purple text-center text-white p-2-5 align-items-center">
+  <p class="title mb-1">
+    Social Media <span class="text-yellow">10x</span>
+    <br class="d-none d-lg-block" />
+    <span class="text-italic">Faster</span>
+    <br class="d-lg-none" />
+    with AI
+  </p>
+  <img class="stars-width w-lg-40" src={href} alt={alt} />
+  <p class="content mt-0">Over 4,000 5-star reviewers</p>
+</div>

@@ -1,0 +1,17 @@
+---
+interface Props {
+  href: string;
+  alt: string;
+}
+
+const { href, alt } = Astro.props;
+---
+
+<div
+  class="i card bg-purple text-center text-white flex-lg-row align-items-lg-center text-lg-start gap-lg-1"
+>
+  <img class="w-65 m-1-5 w-lg-40 m-lg-0" src={href} alt={alt} />
+  <p class="title-three">
+    Grow followers <br /> with non-stop <br /> content.
+  </p>
+</div>
