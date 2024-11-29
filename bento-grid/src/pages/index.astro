@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card1 from "../components/Card1.astro";
+import Card2 from "../components/Card2.astro";
+import Card3 from "../components/Card3.astro";
+import Card4 from "../components/Card4.astro";
+import Card5 from "../components/Card5.astro";
+import Card6 from "../components/Card6.astro";
+import Card7 from "../components/Card7.astro";
+import Card8 from "../components/Card8.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="overflow-hidden container-grid">
+    <Card1
+      href="../../public/images/illustration-five-stars.webp"
+      alt="Stars"
+    />
+
+    <Card2
+      href="../../public/images/illustration-multiple-platforms.webp"
+      alt="Social Networks"
+    />
+
+    <Card3
+      href="../../public/images/illustration-consistent-schedule.webp"
+      alt="Calendar"
+    />
+
+    <Card4
+      href="../../public/images/illustration-schedule-posts.webp"
+      alt="Graph Best Time to Post"
+    />
+
+    <Card5
+      href="../../public/images/illustration-grow-followers.webp"
+      alt="Graph Follower Growth"
+    />
+
+    <Card6
+      href="../../public/images/illustration-audience-growth.webp"
+      alt="Avatars"
+    />
+
+    <Card7
+      href="../../public/images/illustration-create-post.webp"
+      alt="Button Create Post"
+    />
+
+    <Card8 href="../../public/images/illustration-ai-content.webp" alt="Chat" />
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: grid;
+    gap: 2rem;
+  }
+</style>

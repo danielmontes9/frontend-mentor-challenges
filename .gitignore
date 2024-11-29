@@ -24,6 +24,10 @@
 .history
 .ionide
 
+# Jetbrains setting folder
+.idea/
+**/.idea/
+
 # Node_modules
 node_modules/
 **/node_modules/
@@ -34,4 +38,14 @@ logs/
 
 # Files system
 .DS_Store
+**/.DS_Store
 Thumbs.db
+**/Thumbs.db
+
+# Environment variables
+**/.env
+**/.env.production
+
+# Build output
+dist/
+**/dist/

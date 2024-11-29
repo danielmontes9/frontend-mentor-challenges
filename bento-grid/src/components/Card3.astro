@@ -1,0 +1,14 @@
+---
+import type { CardProps } from "../types/CardProps";
+
+const { href, alt } = Astro.props as CardProps;
+---
+
+<div class="y card bg-yellow pb-0 overflow-hidden">
+  <p class="subtitle letter-spacing-lg-2">
+    Maintain a <br class="d-none d-lg-block" /> consistent <br
+      class="d-none d-lg-block"
+    /> posting <br class="d-none d-lg-block" /> schedule.
+  </p>
+  <img class="w-65 image-position-bottom w-lg-100" src={href} alt={alt} />
+</div>

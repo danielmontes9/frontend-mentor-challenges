@@ -1,0 +1,14 @@
+---
+import type { CardProps } from "../types/CardProps";
+
+const { href, alt } = Astro.props as CardProps;
+---
+
+<div class="r card bg-yellow p-2 p-lg-1-5 card-lg justify-content-lg-between">
+  <p class="title-three fw-600 mb-1-5 fw-lg-500 letter-spacing-lg-2">
+    Write your <br class="d-none d-lg-block" /> content <br
+      class="d-none d-lg-block"
+    /> using AI.
+  </p>
+  <img class="w-65 w-lg-100" src={href} alt={alt} />
+</div>

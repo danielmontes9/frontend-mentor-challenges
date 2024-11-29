@@ -1,0 +1,14 @@
+---
+import type { CardProps } from "../types/CardProps";
+
+const { href, alt } = Astro.props as CardProps;
+---
+
+<div class="t card bg-white overflow-hidden card-lg justify-content-lg-between">
+  <img class="w-100 mb-1" src={href} alt={alt} />
+  <p class="subtitle mb-0 letter-spacing-lg-2">
+    Manage <br class="d-none d-lg-block" /> multiple <br
+      class="d-none d-lg-block"
+    /> accounts and <br class="d-none d-lg-block" /> platforms.
+  </p>
+</div>
