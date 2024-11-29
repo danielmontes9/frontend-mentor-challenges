@@ -1,10 +1,7 @@
 ---
-interface Props {
-  href: string;
-  alt: string;
-}
+import type { CardProps } from "../types/CardProps";
 
-const { href, alt } = Astro.props;
+const { href, alt } = Astro.props as CardProps;
 ---
 
 <div class="t card bg-white overflow-hidden card-lg justify-content-lg-between">
