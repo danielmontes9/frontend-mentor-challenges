@@ -15,36 +15,11 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
 
 ### Screenshot
 
-![](./public/overview-bento-grid.jpg)
+![](./public/desktop-design.jpg)
 
 ### Links
 
 - Live Site URL: [danielmontes9-bento-grid.surge.sh](https://danielmontes9-bento-grid.surge.sh)
-
-# Frontend Mentor - Bento Grid Solution
-
-This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [🚀 Project Structure](#project-structure)
-  - [Built with](#built-with)
-- [🧞 Commands](#commands)
-
-## Overview
-
-### Screenshot
-
-![](./public/overview-bento-grid.jpg)
-
-### Links
-
-- Live Site URL: [danielmontes9-bento-grid.surge.sh](danielmontes9-bento-grid.surge.sh)
-
-## Project Structure
 
 ## Project Structure
 
@@ -107,15 +82,6 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
 Any static assets, like images, can be placed in the `public/` directory.
-
-### Built with
-
-- HTML5
-- CSS
-- [Astro](https://astro.build/)
-- Mobile-first workflow
-
-## Commands
 
 ### Built with
 
