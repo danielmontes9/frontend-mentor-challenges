@@ -1,28 +1,55 @@
-# Astro Starter Kit: Basics
+# Frontend Mentor - Bento Grid Solution
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Table of contents
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [🚀 Project Structure](#project-structure)
+  - [Built with](#built-with)
+- [🧞 Commands](#commands)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Overview
 
-## 🚀 Project Structure
+### Screenshot
+
+![](./public/overview-bento-grid.jpg)
+
+### Links
+
+- Live Site URL: [danielmontes9-bento-grid.surge.sh](danielmontes9-bento-grid.surge.sh)
+
+## Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   └── fonts/
+│   │   └── DMSans-VariableFont_opsz,wght.ttf
+│   └── images/
+│   │   └── favicon-32x32.png
+│   │   └── illustration-ai-content.webp
+│   │   └── illustration-audience-growth.webp
+│   │   └── illustration-consistent-schedule.webp
+│   │   └── illustration-create-post.webp
+│   │   └── illustration-five-stars.webp
+│   │   └── illustration-grow-followers.webp
+│   │   └── illustration-multiple-platforms.webp
+│   │   └── illustration-schedule-posts.webp
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Card1.astro
+│   │   └── Card2.astro
+│   │   └── Card3.astro
+│   │   └── Card4.astro
+│   │   └── Card5.astro
+│   │   └── Card6.astro
+│   │   └── Card7.astro
+│   │   └── Card8.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
@@ -36,7 +63,14 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+### Built with
+
+- HTML5
+- CSS
+- [Astro](https://astro.build/)
+- Mobile-first workflow
+
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -48,7 +82,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
