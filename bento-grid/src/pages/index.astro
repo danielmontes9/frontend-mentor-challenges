@@ -187,10 +187,10 @@ import Card from "../components/Card.astro";
     margin-bottom: 0;
   }
   .card {
-    background: white;
+    background: var(--white);
     border-radius: 0.5rem;
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--black-shadow);
     transition: transform 0.2s;
 
     display: flex;
@@ -201,22 +201,22 @@ import Card from "../components/Card.astro";
     align-items: center;
   }
   .img-shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--black-shadow);
   }
   .bg-purple {
-    background-color: #7651dc;
+    background-color: var(--purple);
   }
   .bg-light-purple {
-    background-color: #dcd1fc;
+    background-color: var(--lilac);
   }
   .bg-white {
-    background-color: #ffffff;
+    background-color: var(--white);
   }
   .bg-yellow {
-    background-color: #ffcc69;
+    background-color: var(--yellow);
   }
   .bg-light-yellow {
-    background-color: #faeee2;
+    background-color: var(--salmon);
   }
   .title {
     font-size: 3.5rem;
@@ -255,13 +255,13 @@ import Card from "../components/Card.astro";
     font-style: italic;
   }
   .text-white {
-    color: #fff;
+    color: var(--white);
   }
   .text-yellow {
-    color: #ffcc69;
+    color: var(--yellow);
   }
   .text-purple {
-    color: #7651dc;
+    color: var(--purple);
   }
   .text-center {
     text-align: center;

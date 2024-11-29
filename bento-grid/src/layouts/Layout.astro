@@ -27,33 +27,18 @@ const { title } = Astro.props;
       format("truetype");
   }
   :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
+    --purple: #7651dc;
+    --lilac: #dcd1fc;
+    --white: #ffffff;
+    --yellow: #ffcc69;
+    --salmon: #faeee2;
+    --black-shadow: rgba(0, 0, 0, 0.1);
   }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: "DMSans", system-ui, sans-serif;
     background: #f5f5f5;
   }
   body {
     margin: 1rem;
-    font-family: "DMSans", system-ui, sans-serif;
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
   }
 </style>
